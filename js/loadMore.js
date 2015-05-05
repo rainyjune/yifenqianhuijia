@@ -3,9 +3,6 @@
  * @author rainyjune <rainyjune@live.cn>
  * @version $Id: loadMore.js 724557 2015-01-26 07:42:15Z chenkang $
  */
-define(function(require, exports, module){
-  var $ = require("zepto");
-  require("./util.js");
   
   $(function(){
     
@@ -64,5 +61,3 @@ define(function(require, exports, module){
     var theLongString = theArr.join("");
     $(".d-friends-word").append(theLongString);
   }
-  
-});

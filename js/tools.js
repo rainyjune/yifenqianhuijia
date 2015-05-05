@@ -1,7 +1,4 @@
-/****************************************
-tools
-****************************************/
-define(function(require, exports, module){
+
   // 设置css3
   function setStyle(obj, name, value) {
     var bigname = name.charAt(0).toUpperCase() + name.substring(1);
@@ -16,7 +13,3 @@ define(function(require, exports, module){
   function rnd(iMin, iMax) {
     return Math.floor(Math.random() * (iMax - iMin + 1)) + iMin;
   }
-
-  window.setStyle = setStyle;
-  window.rnd = rnd;
-});

@@ -1,7 +1,7 @@
 /****************************************
 Layouts
 ****************************************/
-define(function(require, exports, module){
+
   function layouts(ele) {
     return new Layouts(ele);
   }
@@ -36,6 +36,3 @@ define(function(require, exports, module){
     setStyle(that.box, 'transform', 'scale3d(' + that.iScale + ', ' + that.iScale + ', ' + that.iScale + ')');
     return that;
   }
-
-  return layouts;
-});

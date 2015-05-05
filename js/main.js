@@ -1,15 +1,7 @@
 /**
  * @fileOverview 微信一分钱回家-转盘页
  * @author rainyjune <rainyjune@live.cn>
- * @version $Id: main.js 724557 2015-01-26 07:42:15Z chenkang $
- * @template m.leju.com\trunk\weixin\templates\v1.0\pool\invite.html
  */
-define(function(require, exports, module){
-  require("./tools.js");
-  var $ = require("zepto");
-  var roulette = require("./roulette.js");
-  require("./loadMore.js");
-  require("./scroll.js");
   
   $(function(){
     var is_turn = $("#is_turn").val();
@@ -121,4 +113,3 @@ define(function(require, exports, module){
       }
     });
   }
-});

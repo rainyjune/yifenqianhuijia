@@ -1,7 +1,7 @@
 /*************************************
 rotation.js
 *************************************/
-define(function(require, exports, module){
+
   
   function rotation(ele) {
     return new Rotation(ele);
@@ -53,7 +53,3 @@ define(function(require, exports, module){
       setStyle(that.hand, 'transition', that.rotTime + 'ms all ease');
     }, 0)
   };
-  
-  return rotation;
-
-});

@@ -1,11 +1,6 @@
 /*******************************************
 roulette.js
 *******************************************/
-define(function(require, exports, module){
-  
-  var layouts = require("./layout.js");
-  var rotation = require("./rotation.js");
-  var $ = require("zepto");
   
 function roulette(ele) {
 	return new Roulette(ele);
@@ -162,6 +157,3 @@ Roulette.prototype.setRouletteRotate = function() {
     rotation(oRotation);
   }
 }
-  
-  return roulette;
-});

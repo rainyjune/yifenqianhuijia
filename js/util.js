@@ -3,7 +3,7 @@
  * @author rainyjune <rainyjune@live.cn>
  * @version $Id: util.js 724557 2015-01-26 07:42:15Z chenkang $
  */
-define(function(require, exports, module){
+
   
   
   function friendTemplate(obj) {
@@ -53,7 +53,3 @@ define(function(require, exports, module){
     
     return container;
   }
-  
-  window.friendTemplate = friendTemplate;
-  
-});
