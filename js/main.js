@@ -61,6 +61,7 @@
       $("#inviteInfo").append(route);
       $(".currentMoeny").text(data.currentMoney);
       if (data["friendsVoteList"].length) {
+        $("#helpCount").text(data["friendsVoteList"].length);
         handleMoreArray(data["friendsVoteList"]);
       }
     });
