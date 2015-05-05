@@ -59,7 +59,7 @@
             <a href="javascript:;" class="evHand"></a>
               <input type="hidden" id="wheel_draw_url" value="./data/luckyResult.json?wx_id=<!--{$weixin_house_id}-->&plid=<!--{$cur_pool_id}-->&invite_id=<!--{$invite_info.id}-->&u=<!--{$open_id}-->" />
               <input type="hidden" id="is_turn" value="<!--{if $invite_info.openid neq $open_id and $remain_num>0}-->1<!--{else}-->0<!--{/if}-->" />
-                      <input type="hidden" id="is_self" value="<!--{if $invite_info.openid eq $open_id}-->1<!--{else}-->0<!--{/if}-->" />
+                      <input type="hidden" id="is_self" value="1" />
                   </div>
         </div>
         <div id="shownum">
@@ -81,26 +81,8 @@
       <div class="d-friends-box <!--{if !$draw_list}-->none<!--{/if}-->">
               <h3>已有<span id="helpCount"><!--{$draw_cnt}--></span>次筹款记录，看看是谁帮了忙</h3>
         <div class="d-friends-word">
-          <!--{foreach from=$draw_list item=item}-->
-                  <div class="d-friends-view">
-            <img class="d-friends-img" src="<!--{$item.headimgurl}-->" />
-            <h4><!--{$item.nickname}--><cite><!--{$item.add_ctime|date_format:'%m-%d %H:%M'}--></cite></h4>
-            <p><i class="<!--{if $item.money<0}-->d-i1<!--{/if}-->"><!--{$item.money|intval}-->元</i>，<span class="win_text"><!--{$item.win_text}--></span></p>
-                      <!--{if $item.money>0}-->
-                      <!--{if $invite_info.openid eq $open_id}-->
-            <a class="d-right" href="#">感谢TA</a>
-                      <!--{/if}-->
-            <img class="d-icon" src="http://src.house.sina.com.cn/imp/imp/deal/2b/8b/1/bf130e9edbd3480f91d13b2fcec_p10_mk10.png" />
-                      <!--{else}-->
-                      <!--{if $invite_info.openid eq $open_id}-->
-                      <a class="d-a1" href="#">曝光TA</a>
-                      <!--{/if}-->
-            <img class="d-icon" src="http://src.house.sina.com.cn/imp/imp/deal/4f/54/4/8953a5b61d6b5b35bb405b71af6_p10_mk10.png" />
-                      <!--{/if}-->
-          </div>
-                  <!--{/foreach}-->
           <!--{if $draw_cnt>5}-->
-          <a class="d-more" href="#">
+          <a class="d-more" href="#" style="display:none;">
             <span>加载更多</span>
           </a>
                   <!--{/if}-->
