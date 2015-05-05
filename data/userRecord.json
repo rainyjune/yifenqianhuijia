@@ -2,5 +2,14 @@
   "fullfilled": false,
   "currentMoney": 200,
   "startPlace": "北京",
-  "destination": "上海"
+  "destination": "上海",
+  "friendsVoteList": [
+    {
+      "headimgurl": "./images/sHead02.png",
+      "nickname": "流风",
+      "add_ctime": "5-2 13:12",
+      "money": 100,
+      "win_text": "谢谢老板"
+    }    
+  ]
 }
