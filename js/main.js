@@ -28,6 +28,11 @@
       if (data["guide_share_text_2"]) {
         $(".shareBox h4").html(data["guide_share_text_2"]);
       }
+      if (data["gifts"] && data["gifts"].length) {
+        var giftsCount = data["gifts"].length;
+        $(".box").eq(0).addClass("box" + giftsCount);
+        $(".box .rot").css("background-image", "url(./images/pan" + giftsCount + ".png)");
+      }
     });
     
     // Get user info
