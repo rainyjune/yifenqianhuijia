@@ -51,7 +51,7 @@
       
         <div id="radiusbox" class="radiusbox">
           <div class="box">
-            <div class="rot" style="background-image: url(<!--{$wheel_image}-->);">
+            <div class="rot">
               <div class="bot">
                               <!--{foreach from=$bonus key=key item=item}-->
                 <span class="radius<!--{$key+1}-->"></span>
@@ -59,7 +59,10 @@
               </div>
               <div class="top" id="items">
                               <!--{foreach from=$bonus key=key item=item}-->
-                <span class="radius<!--{$key+1}-->"><em><!--{$item.money}--></em></span>
+                <span class="radius1"><em>1</em></span>
+                <span class="radius2"><em>2</em></span>
+                <span class="radius3"><em>3</em></span>
+                <span class="radius4"><em>4</em></span>
                               <!--{/foreach}-->
               </div>
             </div>
