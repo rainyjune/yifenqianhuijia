@@ -1,4 +1,6 @@
 {
   "fullfilled": false,
-  "currentMoney": 200
+  "currentMoney": 200,
+  "startPlace": "北京",
+  "destination": "上海"
 }
