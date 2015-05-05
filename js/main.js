@@ -38,6 +38,14 @@
       if (data["result_pic"]) {
         $(".expenses .d-m-bg").attr("src", data["result_pic"]);
       }
+      if (data["winList"].length) {
+        $("#winners").removeClass("none");
+        renderWinners(data["winList"]);
+        if (data["winList"].length > 2) {
+          //code
+          $(".d-lottery-list").autoScroll();
+        }
+      }
     });
     
     // Get user info
@@ -85,10 +93,7 @@
     
     
     //$(".d-lottery-list").autoScroll();
-    if (lukyUsers.length > 2) {
-      //code
-      $(".d-lottery-list").autoScroll();
-    }
+    
     
     $("a.popup").on("click", function(){
       $("#shareBoxContainer").show();

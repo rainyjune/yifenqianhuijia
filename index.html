@@ -90,19 +90,13 @@
         </div>
       </div>
           <!--{if $win_list}-->
-          <div class="d-lottery d-lottery-none">
+      <div class="d-lottery d-lottery-none none" id="winners">
         <div class="d-lottery-box">
           <span>
             获奖用户
           </span>
             <div class="d-lottery-list clearfix">
                     <div class="d-lottery-list-container">
-                      <!--{foreach from=$win_list item=item}-->
-                      <div>
-                        <h4><!--{$item.nickname}--></h4>
-                        <p>获得<!--{$item.name}--></p>
-                      </div>
-                      <!--{/foreach}-->
                     </div>
             </div>
         </div>
@@ -148,6 +142,7 @@
           </div>
     </div>
     <script src="./js/zepto.min.js"></script>
+    <script src="./js/fx.js"></script>
     <script src="./js/tools.js"></script>
     <script src="./js/layout.js"></script>
     <script src="./js/rotation.js"></script>

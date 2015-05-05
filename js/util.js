@@ -61,3 +61,11 @@
     });
     $("#items").html(arr.join(''));
   }
+
+  function renderWinners(items) {
+    var arr = [];
+    $.each(items, function(index, item){
+      arr.push("<div><h4>"+item.nickname+"</h4><p>获得"+item.name+"</p></div>");
+    });
+    $(".d-lottery-list-container").eq(0).html(arr.join(''));
+  }
