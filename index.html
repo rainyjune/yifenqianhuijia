@@ -16,16 +16,14 @@
 </head>
 <body>
 	<div class="sPrizeHead">
-		<img src="./images/temp/sImg01.png">
-        <!--{if !$pool_ext.share_pool_pic}-->
-        <h5 class="d-h5"><!--{$pool_ext.guanming}--></h5>
-		<h6 class="d-h6"><!--{$pool_info.start_datetime|date_format:'%Y.%m.%d'}-->  —  <!--{$pool_info.end_datetime|date_format:'%Y.%m.%d'}--></h6>
-        <!--{/if}-->
+		<img src="./images/temp/sImg01.png" id="topPoster">
+        <h5 class="d-h5" id="sponsor"></h5>
+		<h6 class="d-h6" id="duration"></h6>
 	</div>
 	<div class="sPrizeBox">
-        <!--{if $invite_info.is_reach}-->
-        <div class="raiseFundsBox">
-			<img class="head" src="<!--{$invite_info.headimgurl}-->">
+    <!--{if $invite_info.is_reach}-->
+    <div class="raiseFundsBox">
+			<img class="head">
 			<h1>
             <!--{if $pool_ext.share_pool_text_2}-->
             <!--{$pool_ext.share_pool_text_2}-->
@@ -39,6 +37,7 @@
             <div class="btnBox"><a href="#" class="sBtn01 popup">分享好友圈炫一把</a></div>
             <!--{/if}-->
 		</div>
+    
         <!--{else}-->
 		<!--{if $invite_info.openid neq $open_id}-->
         <p class="font01">好友<!--{$invite_info.nickname}-->   <!--{if $invite_info.start_place}-->现在<!--{$invite_info.start_place}--><!--{/if}-->   <!--{if $invite_info.end_place}-->要去<!--{$invite_info.end_place}--><!--{/if}--></p>
