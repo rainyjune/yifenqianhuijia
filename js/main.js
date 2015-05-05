@@ -35,6 +35,9 @@
         renderGiftItems(data["gifts"]);
         rouletteGame();
       }
+      if (data["result_pic"]) {
+        $(".expenses .d-m-bg").attr("src", data["result_pic"]);
+      }
     });
     
     // Get user info
