@@ -32,10 +32,11 @@
               <!--{/if}-->
       </div>
       
-          <!--{else}-->
+      <div id="notFullfilledContainer">
+        
       <!--{if $invite_info.openid neq $open_id}-->
-          <p class="font01" id="inviteInfo">好友<span class="nickname"></span>   </p>
-      <p class="font02">
+        <p class="font01" id="inviteInfo">好友<span class="nickname"></span>   </p>
+        <p class="font02">
           <!--{if 0 OR $pool_ext.share_pool_text_1}-->
           <!--{$pool_ext.share_pool_text_1}-->
           <!--{else}-->
@@ -74,9 +75,13 @@
           <!--{else}-->
           <div class="sCityBtnBox"><a class="sBtn popup" href="#">邀请小伙伴帮我筹款</a></div>
           <!--{/if}-->
-          <!--{/if}-->
+      
+      </div>
+          
+          
       <div class="cording"></div>
     </div>
+    
     <div class="sWrap">
       <div class="d-friends-box <!--{if !$draw_list}-->none<!--{/if}-->">
               <h3>已有<span id="helpCount"><!--{$draw_cnt}--></span>次筹款记录，看看是谁帮了忙</h3>
@@ -89,7 +94,6 @@
                   <input type="hidden" id="load_more_url" value="/weixin/pool/load_more_help_list.html?wx_id=<!--{$weixin_house_id}-->&plid=<!--{$cur_pool_id}-->&invite_id=<!--{$invite_id}-->&offset=5&u=<!--{$open_id}-->" />
         </div>
       </div>
-          <!--{if $win_list}-->
       <div class="d-lottery d-lottery-none none" id="winners">
         <div class="d-lottery-box">
           <span>
@@ -101,7 +105,6 @@
             </div>
         </div>
       </div>
-          <!--{/if}-->
     </div>
     <div class="sFooter">本活动由“<span></span>”运营</div>
     <div class="sCityFixBox none" id="ganxie">

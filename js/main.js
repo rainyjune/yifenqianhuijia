@@ -58,6 +58,7 @@
     $.getJSON("./data/userRecord.json", function(data) {
       if (data.fullfilled) {
         $(".raiseFundsBox").removeClass("none");
+        $("#notFullfilledContainer").addClass("none");
       }
       var route = "";
       if (data["startPlace"]) {
