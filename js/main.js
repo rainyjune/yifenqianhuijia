@@ -32,6 +32,7 @@
         var giftsCount = data["gifts"].length;
         $(".box").eq(0).addClass("box" + giftsCount);
         $(".box .rot").css("background-image", "url(./images/pan" + giftsCount + ".png)");
+        renderGiftItems(data["gifts"]);
       }
     });
     

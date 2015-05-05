@@ -53,3 +53,11 @@
     
     return container;
   }
+  
+  function renderGiftItems(items) {
+    var arr = [];
+    $.each(items, function(index, item){
+      arr.push("<span class='radius" + (index + 1) + "'><em>" + item + "</em></span>");
+    });
+    $("#items").html(arr.join(''));
+  }
