@@ -17,6 +17,16 @@
       if (data.startDate && data.endDate) {
         $("#duration").text(data.startDate + " — " + data.endDate);
       }
+      $(".goalMoney").prepend(data.goalMoney);
+      if (data.fullfilledText) {
+        $("#fullfilledText").html(data.fullfilledText);
+      }
+      if (data["guide_share_text_1"]) {
+        $(".shareBox h3").html(data["guide_share_text_1"]);
+      }
+      if (data["guide_share_text_2"]) {
+        $(".shareBox h4").html(data["guide_share_text_2"]);
+      }
     });
     
     // Get user info
@@ -26,7 +36,9 @@
     
     // Get current user's data in this activity
     $.getJSON("./data/userRecord.json", function(data) {
-      
+      if (data.fullfilled) {
+        $(".raiseFundsBox").removeClass("none");
+      }
     });
     
     
