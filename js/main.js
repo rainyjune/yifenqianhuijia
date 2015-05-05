@@ -49,7 +49,7 @@
         route += " 要去" + data["destination"];
       }
       $("#inviteInfo").append(route);
-      $("#resultMoneyTotal").prepend(data.currentMoney);
+      $(".currentMoeny").text(data.currentMoney);
     });
     
     

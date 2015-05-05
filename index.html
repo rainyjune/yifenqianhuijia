@@ -39,12 +39,12 @@
           <!--{if 0 OR $pool_ext.share_pool_text_1}-->
           <!--{$pool_ext.share_pool_text_1}-->
           <!--{else}-->
-          <em><!--{$invite_info.nickname}--></em>邀请您筹款<em class="goalMoney">元</em>换机票回家  已筹集：<em id="resultMoneyTotal">元</em>
+          <em><!--{$invite_info.nickname}--></em>邀请您筹款<em class="goalMoney">元</em>换机票回家  已筹集：<em id="resultMoneyTotal" class="currentMoeny">元</em>
           <!--{/if}-->
           <!--{else}-->
           <p class="font01">我是<!--{$invite_info.nickname}-->   <!--{if $invite_info.start_place}-->现在<!--{$invite_info.start_place}--><!--{/if}-->   <!--{if $invite_info.end_place}-->要去<!--{$invite_info.end_place}--><!--{/if}--></p>
           <p class="font03 d-font03">
-          需筹款<span><!--{$reach_money}--></span>元换机票回家,已筹集：<span><!--{$invite_info.money|intval}--></span>元
+          需筹款<span class="goalMoney"></span>元换机票回家,已筹集：<span class="currentMoeny"></span>元
           </p>
           <!--{/if}-->
           </p>
