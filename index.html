@@ -23,28 +23,17 @@
           <!--{/if}-->
     </div>
     <div class="sPrizeBox">
-          <!--{if $invite_info.is_reach}-->
-          <div class="raiseFundsBox">
+          <!--如果已经集齐所需资金-->
+      <div class="raiseFundsBox none">
         <img class="head" src="./images/sHead01.png">
         <h1><em>2000元</em> 已筹齐，免费机票到手！</h1>
         <div class="btnBox"><a href="/weixin/pool/index.html?wx_id=<!--{$weixin_house_id}-->&plid=<!--{$cur_pool_id}-->&u=<!--{$open_id}-->" class="sBtn01">我也参加活动</a></div>
               <div class="btnBox"><a href="#" class="sBtn01 popup">分享好友圈炫一把</a></div>
       </div>
-          <!--{else}-->
-      <!--{if $invite_info.openid neq $open_id}-->
-          <p class="font01">好友<!--{$invite_info.nickname}-->   <!--{if $invite_info.start_place}-->现在<!--{$invite_info.start_place}--><!--{/if}-->   <!--{if $invite_info.end_place}-->要去<!--{$invite_info.end_place}--><!--{/if}--></p>
+          <!--如果还没有集齐所需资金-->
+          <p class="font01">好友 rainyjune   现在北京   要去上海</p>
       <p class="font02">
-          <!--{if 0 OR $pool_ext.share_pool_text_1}-->
-          <!--{$pool_ext.share_pool_text_1}-->
-          <!--{else}-->
-          <em><!--{$invite_info.nickname}--></em>邀请您筹款<em><!--{$reach_money}-->元</em>换机票回家  已筹集：<em id="resultMoneyTotal"><!--{$invite_info.money|intval}-->元</em>
-          <!--{/if}-->
-          <!--{else}-->
-          <p class="font01">我是<!--{$invite_info.nickname}-->   <!--{if $invite_info.start_place}-->现在<!--{$invite_info.start_place}--><!--{/if}-->   <!--{if $invite_info.end_place}-->要去<!--{$invite_info.end_place}--><!--{/if}--></p>
-          <p class="font03 d-font03">
-          需筹款<span><!--{$reach_money}--></span>元换机票回家,已筹集：<span><!--{$invite_info.money|intval}--></span>元
-          </p>
-          <!--{/if}-->
+          <em>rainyjune</em>邀请您筹款<em>2000元</em>换机票回家  已筹集：<em id="resultMoneyTotal">100元</em>
           </p>
       
         <div id="radiusbox" class="radiusbox">
