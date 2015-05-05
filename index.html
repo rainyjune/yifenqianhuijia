@@ -57,7 +57,7 @@
             </div>
             <a class="hand" href="javascript:;"><img class="head"></a>
             <a href="javascript:;" class="evHand"></a>
-                      <input type="hidden" id="wheel_draw_url" value="/weixin/pool/wheel_draw.html?wx_id=<!--{$weixin_house_id}-->&plid=<!--{$cur_pool_id}-->&invite_id=<!--{$invite_info.id}-->&u=<!--{$open_id}-->" />
+              <input type="hidden" id="wheel_draw_url" value="./data/luckyResult.json?wx_id=<!--{$weixin_house_id}-->&plid=<!--{$cur_pool_id}-->&invite_id=<!--{$invite_info.id}-->&u=<!--{$open_id}-->" />
               <input type="hidden" id="is_turn" value="<!--{if $invite_info.openid neq $open_id and $remain_num>0}-->1<!--{else}-->0<!--{/if}-->" />
                       <input type="hidden" id="is_self" value="<!--{if $invite_info.openid eq $open_id}-->1<!--{else}-->0<!--{/if}-->" />
                   </div>
