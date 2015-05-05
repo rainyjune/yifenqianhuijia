@@ -22,15 +22,9 @@
 	</div>
 	<div class="sPrizeBox">
     <!--{if $invite_info.is_reach}-->
-    <div class="raiseFundsBox">
+    <div class="raiseFundsBox none">
 			<img class="head">
-			<h1>
-            <!--{if $pool_ext.share_pool_text_2}-->
-            <!--{$pool_ext.share_pool_text_2}-->
-            <!--{else}-->
-            <em><!--{$reach_money}-->元</em> 已筹齐，免费机票到手！
-            <!--{/if}-->
-            </h1>
+			<h1 id="fullfilledText"><em class="goalMoney">元</em> 已筹齐，免费机票到手！</h1>
             <!--{if $invite_info.openid neq $open_id}-->
 			<div class="btnBox"><a href="/weixin/pool/index.html?wx_id=<!--{$weixin_house_id}-->&plid=<!--{$cur_pool_id}-->&u=<!--{$open_id}-->" class="sBtn01">我也参加活动</a></div>
             <!--{else}-->
@@ -175,8 +169,8 @@
 	</div>
   <div class="sCityFixBox none" id="shareBoxContainer">
         <div class="shareBox">
-          <h3><!--{if $pool_ext.guide_share_text_1}--><!--{$pool_ext.guide_share_text_1}--><!--{else}-->求助好友帮忙筹集路费<!--{/if}--></h3>
-          <h4><!--{if $pool_ext.guide_share_text_2}--><!--{$pool_ext.guide_share_text_2}--><!--{else}-->筹集满<!--{$reach_money}-->元即可免费打飞的回家<!--{/if}--></h4>
+          <h3>求助好友帮忙筹集路费</h3>
+          <h4>筹集满<span class="goalMoney"></span>元即可免费打飞的回家</h4>
         </div>
   </div>
   <!--{include file="v1.0/pool/_weixin_share_js.html"}-->
