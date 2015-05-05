@@ -32,14 +32,23 @@
     
     // Get user info
     $.getJSON("./data/user.json", function(data) {
+      $(".nickname").text(data.username);
       $(".head").attr("src", data.useravatar);
     });
     
-    // Get current user's data in this activity
+    // Get user's data in this activity
     $.getJSON("./data/userRecord.json", function(data) {
       if (data.fullfilled) {
         $(".raiseFundsBox").removeClass("none");
       }
+      var route = "";
+      if (data["startPlace"]) {
+        route += "现在" + data["startPlace"];
+      }
+      if (data["destination"]) {
+        route += " 要去" + data["destination"];
+      }
+      $("#inviteInfo").append(route);
     });
     
     

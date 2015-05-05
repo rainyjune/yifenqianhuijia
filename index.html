@@ -34,7 +34,7 @@
     
         <!--{else}-->
 		<!--{if $invite_info.openid neq $open_id}-->
-        <p class="font01">好友<!--{$invite_info.nickname}-->   <!--{if $invite_info.start_place}-->现在<!--{$invite_info.start_place}--><!--{/if}-->   <!--{if $invite_info.end_place}-->要去<!--{$invite_info.end_place}--><!--{/if}--></p>
+        <p class="font01" id="inviteInfo">好友<span class="nickname"></span>   </p>
 		<p class="font02">
         <!--{if 0 OR $pool_ext.share_pool_text_1}-->
         <!--{$pool_ext.share_pool_text_1}-->
