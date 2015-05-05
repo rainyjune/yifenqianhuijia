@@ -2,7 +2,9 @@
   "code": 1,
   "id": 2,
   "money": 200,
+  "nickname": "邻家的喵",
   "win_text": "真棒，么么哒",
+  "add_ctime": "03-01 10:12",
   "headimgurl": "./images/sHead02.png",
   "remain_num": 5
 }
