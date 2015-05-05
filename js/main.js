@@ -60,6 +60,9 @@
       }
       $("#inviteInfo").append(route);
       $(".currentMoeny").text(data.currentMoney);
+      if (data["friendsVoteList"].length) {
+        handleMoreArray(data["friendsVoteList"]);
+      }
     });
     
     
