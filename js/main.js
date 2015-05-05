@@ -8,6 +8,27 @@
     var isSelf = $("#is_self").val();
     var lukyUsers = $(".d-lottery-list-container").children();
     
+    // Get activity info.
+    $.getJSON('./data/activity.json', function(data) {
+      if (data.topPoster) {
+        $("#topPoster").attr("src", data.topPoster);
+      }
+      $("#sponsor").text(data.sponsor);
+      if (data.startDate && data.endDate) {
+        $("#duration").text(data.startDate + " — " + data.endDate);
+      }
+    });
+    
+    // Get user info
+    $.getJSON("./data/user.json", function(data) {
+      $(".head").attr("src", data.useravatar);
+    });
+    
+    // Get current user's data in this activity
+    $.getJSON("./data/userRecord.json", function(data) {
+      
+    });
+    
     
     $("#panResult").on("click", "a.close", function(){
       $("#panResult").hide();
