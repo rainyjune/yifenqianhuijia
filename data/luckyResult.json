@@ -2,5 +2,7 @@
   "code": 1,
   "id": 2,
   "money": 200,
+  "win_text": "真棒，么么哒",
+  "headimgurl": "./images/sHead02.png",
   "remain_num": 5
 }

@@ -46,8 +46,8 @@
     
     var rateImg = document.createElement("img");
     rateImg.className = "d-icon";
-    var goodSrc = "/activity/resources/v1.0/pool/images/d-icon-good.png";
-    var badSrc = "/activity/resources/v1.0/pool/images/d-icon-bad.png";
+    var goodSrc = "./images/d-icon-good.png";
+    var badSrc = "./images/d-icon-bad.png";
     rateImg.src = obj.money > 0 ? goodSrc : badSrc;
     container.appendChild(rateImg);
     
