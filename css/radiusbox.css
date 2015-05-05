@@ -1,0 +1,171 @@
+  a{ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+  .box span {
+    width: 3em;
+    margin-left: -1.5em;
+    height: 24px;
+    line-height: 24px;
+    margin-top: -12px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    /*
+    -webkit-transform: initial !important;
+    transform: initial !important;
+    
+    */
+     -webkit-transform-origin: center center;
+    transform-origin: center center;
+  }
+  
+  .box2 span.radius1 {
+    -webkit-transform: rotate(90deg) translate(0, -70px);
+    transform: rotate(90deg) translate(0, -70px);
+  }
+  
+  .box2 span.radius2 {
+    -webkit-transform: rotate(270deg) translate(0, -70px);
+    transform: rotate(270deg) translate(0, -70px);
+  }
+  
+  .box4 span.radius1 {
+    -webkit-transform: rotate(45deg) translate(0, -70px);
+    transform: rotate(45deg) translate(0, -70px);
+  }
+  
+  .box4 span.radius2 {
+    -webkit-transform: rotate(135deg) translate(0, -70px);
+    transform: rotate(135deg) translate(0, -70px);
+  }
+  
+  .box4 span.radius3 {
+    -webkit-transform: rotate(225deg) translate(0, -70px);
+    transform: rotate(225deg) translate(0, -70px);
+  }
+  
+  .box4 span.radius4 {
+    -webkit-transform: rotate(315deg) translate(0, -70px);
+    transform: rotate(315deg) translate(0, -70px);
+  }
+  
+  
+  .box6 span.radius1 {
+    -webkit-transform: rotate(35deg) translate(0, -70px);
+    transform: rotate(35deg) translate(0, -70px);
+  }
+  
+  .box6 span.radius2 {
+    -webkit-transform: rotate(90deg) translate(0, -70px);
+    transform: rotate(90deg) translate(0, -70px);
+  }
+  
+  .box6 span.radius3 {
+    -webkit-transform: rotate(155deg) translate(0, -70px);
+    transform: rotate(155deg) translate(0, -70px);
+  }
+  
+  .box6 span.radius4 {
+    -webkit-transform: rotate(215deg) translate(0, -70px);
+    transform: rotate(215deg) translate(0, -70px);
+  }
+  
+  .box6 span.radius5 {
+    -webkit-transform: rotate(275deg) translate(0, -70px);
+    transform: rotate(275deg) translate(0, -70px);
+  }
+  
+  .box6 span.radius6 {
+    -webkit-transform: rotate(335deg) translate(0, -70px);
+    transform: rotate(335deg) translate(0, -70px);
+  }
+  
+  
+  .box8 span.radius1 {
+    -webkit-transform: rotate(25deg) translate(0, -70px);
+    transform: rotate(25deg) translate(0, -70px);
+  }
+  
+  .box8 span.radius2 {
+    -webkit-transform: rotate(70deg) translate(0, -70px);
+    transform: rotate(70deg) translate(0, -70px);
+  }
+  
+  .box8 span.radius3 {
+    -webkit-transform: rotate(115deg) translate(0, -70px);
+    transform: rotate(115deg) translate(0, -70px);
+  }
+  
+  .box8 span.radius4 {
+    -webkit-transform: rotate(160deg) translate(0, -70px);
+    transform: rotate(160deg) translate(0, -70px);
+  }
+  
+  .box8 span.radius5 {
+    -webkit-transform: rotate(205deg) translate(0, -70px);
+    transform: rotate(205deg) translate(0, -70px);
+  }
+  
+  .box8 span.radius6 {
+    -webkit-transform: rotate(250deg) translate(0, -70px);
+    transform: rotate(250deg) translate(0, -70px);
+  }
+  .box8 span.radius7 {
+    -webkit-transform: rotate(295deg) translate(0, -70px);
+    transform: rotate(295deg) translate(0, -70px);
+  }
+  
+  .box8 span.radius8 {
+    -webkit-transform: rotate(340deg) translate(0, -70px);
+    transform: rotate(340deg) translate(0, -70px);
+  }
+  
+  
+  .box10 span.radius1 {
+    -webkit-transform: rotate(20deg) translate(0, -70px);
+    transform: rotate(20deg) translate(0, -70px);
+  }
+  
+  .box10 span.radius2 {
+    -webkit-transform: rotate(56deg) translate(0, -70px);
+    transform: rotate(56deg) translate(0, -70px);
+  }
+  
+  .box10 span.radius3 {
+    -webkit-transform: rotate(92deg) translate(0, -70px);
+    transform: rotate(92deg) translate(0, -70px);
+  }
+  
+  .box10 span.radius4 {
+    -webkit-transform: rotate(128deg) translate(0, -70px);
+    transform: rotate(128deg) translate(0, -70px);
+  }
+  
+  .box10 span.radius5 {
+    -webkit-transform: rotate(164deg) translate(0, -70px);
+    transform: rotate(164deg) translate(0, -70px);
+  }
+  
+  .box10 span.radius6 {
+    -webkit-transform: rotate(200deg) translate(0, -70px);
+    transform: rotate(200deg) translate(0, -70px);
+  }
+  .box10 span.radius7 {
+    -webkit-transform: rotate(236deg) translate(0, -70px);
+    transform: rotate(236deg) translate(0, -70px);
+  }
+  
+  .box10 span.radius8 {
+    -webkit-transform: rotate(272deg) translate(0, -70px);
+    transform: rotate(272deg) translate(0, -70px);
+  }
+  .box10 span.radius9 {
+    -webkit-transform: rotate(308deg) translate(0, -70px);
+    transform: rotate(308deg) translate(0, -70px);
+  }
+  
+  .box10 span.radius10 {
+    -webkit-transform: rotate(344deg) translate(0, -70px);
+    transform: rotate(344deg) translate(0, -70px);
+  }
+  
