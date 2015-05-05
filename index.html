@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="sPrizeHead">
-      <img src="<!--{if $pool_ext.share_pool_pic}--><!--{$pool_ext.share_pool_pic}--><!--{else}-->/weixin/resources/v1.0/pool/images/temp/sImg01.png<!--{/if}-->">
+      <img src="./images/temp/sImg01.png">
           <!--{if !$pool_ext.share_pool_pic}-->
           <h5 class="d-h5"><!--{$pool_ext.guanming}--></h5>
       <h6 class="d-h6"><!--{$pool_info.start_datetime|date_format:'%Y.%m.%d'}-->  —  <!--{$pool_info.end_datetime|date_format:'%Y.%m.%d'}--></h6>
@@ -25,19 +25,10 @@
     <div class="sPrizeBox">
           <!--{if $invite_info.is_reach}-->
           <div class="raiseFundsBox">
-        <img class="head" src="<!--{$invite_info.headimgurl}-->">
-        <h1>
-              <!--{if $pool_ext.share_pool_text_2}-->
-              <!--{$pool_ext.share_pool_text_2}-->
-              <!--{else}-->
-              <em><!--{$reach_money}-->元</em> 已筹齐，免费机票到手！
-              <!--{/if}-->
-              </h1>
-              <!--{if $invite_info.openid neq $open_id}-->
+        <img class="head" src="./images/sHead01.png">
+        <h1><em>2000元</em> 已筹齐，免费机票到手！</h1>
         <div class="btnBox"><a href="/weixin/pool/index.html?wx_id=<!--{$weixin_house_id}-->&plid=<!--{$cur_pool_id}-->&u=<!--{$open_id}-->" class="sBtn01">我也参加活动</a></div>
-              <!--{else}-->
               <div class="btnBox"><a href="#" class="sBtn01 popup">分享好友圈炫一把</a></div>
-              <!--{/if}-->
       </div>
           <!--{else}-->
       <!--{if $invite_info.openid neq $open_id}-->
@@ -58,7 +49,7 @@
       
         <div id="radiusbox" class="radiusbox">
           <div class="box box<!--{$bonus|@count}-->">
-            <div class="rot" style="background-image: url(<!--{$wheel_image}-->);">
+            <div class="rot" style="background-image: url(images/pan6.png);">
               <div class="bot">
                               <!--{foreach from=$bonus key=key item=item}-->
                 <span class="radius<!--{$key+1}-->"></span>
@@ -70,7 +61,7 @@
                               <!--{/foreach}-->
               </div>
             </div>
-            <a class="hand" href="javascript:;"><img src="<!--{$invite_info.headimgurl}-->"></a>
+            <a class="hand" href="javascript:;"><img src="./images/sHead01.png"></a>
             <a href="javascript:;" class="evHand"></a>
                       <input type="hidden" id="wheel_draw_url" value="/weixin/pool/wheel_draw.html?wx_id=<!--{$weixin_house_id}-->&plid=<!--{$cur_pool_id}-->&invite_id=<!--{$invite_info.id}-->&u=<!--{$open_id}-->" />
               <input type="hidden" id="is_turn" value="<!--{if $invite_info.openid neq $open_id and $remain_num>0}-->1<!--{else}-->0<!--{/if}-->" />
@@ -110,7 +101,7 @@
       <div class="sWinWinBox">
         <h1>您帮<!--{$invite_info.nickname}-->筹集了<span id="resultMoney">500</span>元！</h1>
         <div class="expenses">
-              <img class="d-m-bg" src="<!--{if $pool_ext.result_pic}--><!--{$pool_ext.result_pic}--><!--{else}-->http://src.house.sina.com.cn/imp/imp/deal/59/e1/d/93aa0ac7c8dd95f6e057a7c4b57_p10_mk10.png<!--{/if}-->" />
+              <img class="d-m-bg" src="./images/93aa0ac7c8dd95f6e057a7c4b57_p10_mk10.png" />
               <i>¥500</i>
               </div>
         <div class="btnBox">
