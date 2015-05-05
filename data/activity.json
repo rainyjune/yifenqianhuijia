@@ -9,5 +9,12 @@
   "guide_share_text_1": "",
   "guide_share_text_2": "",
   "result_pic": "",
-  "gifts": ["-100元", "200元", "-300元", "500元"]
+  "gifts": ["-100元", "200元", "-300元", "500元"],
+  "winList": [
+    {"nickname": "打不死的小强1", "name": "100元"},
+    {"nickname": "打不死的小强2", "name": "500元"},
+    {"nickname": "打不死的小强3", "name": "300元"},
+    {"nickname": "打不死的小强4", "name": "100元"},
+    {"nickname": "打不死的小强5", "name": "200元"}
+  ]
 }
