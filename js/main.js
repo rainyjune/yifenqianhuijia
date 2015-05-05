@@ -14,6 +14,7 @@
         $("#topPoster").attr("src", data.topPoster);
       }
       $("#sponsor").text(data.sponsor);
+      $(".sFooter span").text(data.houseTitle);
       if (data.startDate && data.endDate) {
         $("#duration").text(data.startDate + " — " + data.endDate);
       }
